@@ -1,0 +1,29 @@
+# Node
+node_modules
+package-lock.json
+
+# Build outputs
+dist
+build
+out
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Husky internals
+.husky/_
+
+# IDE / OS
+.vscode
+.idea
+.DS_Store
+
+# Coverage / tests
+coverage
