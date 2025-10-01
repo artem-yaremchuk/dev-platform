@@ -10,17 +10,16 @@
     "dev:client": "npm --workspace=client run dev",
     "dev:server": "npm --workspace=server run dev",
     "dev": "concurrently 'npm run dev:client' 'npm run dev:server'",
-    "prepare": "husky",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "prepare": "husky"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json,css,md}": "prettier --write"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.1.0",
-    "@commitlint/config-conventional": "^20.0.0",
     "concurrently": "^9.0.1",
+    "husky": "^9.1.7",
     "lint-staged": "^16.2.3",
     "prettier": "^3.6.2"
   }
